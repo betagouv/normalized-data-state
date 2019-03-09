@@ -100,8 +100,8 @@ config of getNormalizedMergedState can have:
 
 | name | type | example | isRequired | default | description |
 | -- | -- | -- | -- | -- | -- |
-| isMergingArray | bool | See test | non | `true` | decide if nextState.<arrayName> will be a merge of previous and next data or just a replace with the new array |
-| isMergingDatum | bool | See test | non | `false` | decide if `nextState.<arrayName>[...<datum>]` will be a merge from previous and next datum or just a replace with next datum |
-| isMutatingArray | bool | See test | non | `true` | decide if nextState.<arrayName> will be a concat or a merge from previous array |
-| isMutatingDatum | bool | See test | non | `false` | decide if `nextState.<arrayName>[...<datum>]` will be a clone or a merge into the previous datum |
-| normalizer | objet | See previous section | non | `null` | a nested object giving relationships between datumKeys and entities to be store at stateKeys |
+| isMergingArray | bool | [See test](https://github.com/betagouv/normalized-data-state/blob/887323e6146d5eec40203b4f4b692bfcb65a4cd9/src/tests/getNormalizedMergedState.spec.js#L92) | non | `true` | decide if nextState.<arrayName> will be a merge of previous and next data or just a replace with the new array |
+| isMergingDatum | bool | [See test](https://github.com/betagouv/normalized-data-state/blob/master/src/tests/getNormalizedMergedState.spec.js#L145) | non | `false` | decide if `nextState.<arrayName>[...<datum>]` will be a merge from previous and next datum or just a replace with next datum |
+| isMutatingArray | bool | [See test](https://github.com/betagouv/normalized-data-state/blob/master/src/tests/getNormalizedMergedState.spec.js#L117) | non | `true` | decide if nextState.<arrayName> will be a concat or a merge from previous array |
+| isMutatingDatum | bool | [See test](https://github.com/betagouv/normalized-data-state/blob/master/src/tests/getNormalizedMergedState.spec.js#L183) | non | `false` | decide if `nextState.<arrayName>[...<datum>]` will be a clone or a merge into the previous datum |
+| normalizer | objet | [See test](https://github.com/betagouv/normalized-data-state/blob/master/src/tests/getNormalizedMergedState.spec.js#L280) | non | `null` | a nested object giving relationships between datumKeys and entities to be store at stateKeys |
