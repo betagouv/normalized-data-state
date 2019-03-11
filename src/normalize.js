@@ -59,7 +59,9 @@ export function normalizeData (data, config) {
               normalizer: { [stateKey]: { normalizer: subNormalizer, stateKey } }
             }
           )
+
           normalizeDataAtItem(data, datumKey, stateKey, subConfig)
+
         })
 }
 
