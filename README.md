@@ -2,6 +2,9 @@
 
 A simple lib to obtain a state of normalized data.
 
+[![CircleCI](https://circleci.com/gh/betagouv/normalized-data-state/tree/master.svg?style=svg)](https://circleci.com/gh/betagouv/normalized-data-state/tree/master)
+[![npm version](https://img.shields.io/npm/v/normalized-data-state.svg?style=flat-square)](https://npmjs.org/package/normalized-data-state)
+
 ## Basic Usage
 
 ### Merge
